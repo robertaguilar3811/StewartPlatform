@@ -54,7 +54,36 @@ It demonstrates inverse kinematics, Euler angle interpolation, and visualization
 ---
 
 ### Customization
-- Change start/end Euler angles in the script:  
-  ```matlab
-  phi1 = 0; theta1 = 0; psi1 = 0;   % Start angles
-  phi2 = -10; theta2 = 20; psi2 = -30; % End angles
+
+You can modify the start and end positions (Cartesian coordinates + Euler angles) in the script:  
+
+```matlab
+% Enter Cartesian Coordinates
+% Start
+x1 = 0;
+y1 = 0;
+z1 = 0;
+
+% End
+x2 = 0;
+y2 = 0;
+z2 = 0;
+
+% Enter Euler Angles
+% Start
+phi1 = 0;    % pitch, about x
+theta1 = 0;  % roll, about y
+psi1 = 0;    % yaw, about z
+
+phi1 = deg2rad(phi1);
+theta1 = deg2rad(theta1);
+psi1 = deg2rad(psi1);
+
+% End
+phi2 = -10;   % pitch, about x
+theta2 = 20;  % roll, about y
+psi2 = -30;   % yaw, about z
+
+phi2 = deg2rad(phi2);
+theta2 = deg2rad(theta2);
+psi2 = deg2rad(psi2);
